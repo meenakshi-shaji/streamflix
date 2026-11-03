@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover your next favorite story with StreamFlix.">
+  <title>Join StreamFlix | Unlimited Entertainment</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-overlay"></div>
+
+  <header class="navbar">
+    <a href="#" class="logo" aria-label="StreamFlix home">
+      STREAM<span>FLIX</span>
+    </a>
+    <a href="login.html" class="nav-link">Sign in</a>
+  </header>
+
+  <main class="hero">
+    <section class="hero-content">
+      <p class="eyebrow">YOUR NEXT OBSESSION STARTS HERE</p>
+      <h1>Stories that<br>stay with <span>you.</span></h1>
+      <p class="hero-description">
+        Discover unforgettable movies, explore new worlds,
+        and find your next favorite story—all in one place.
+      </p>
+
+      <div class="feature-list">
+        <div class="feature">
+          <span class="feature-icon" aria-hidden="true">✦</span>
+          <span>Discover something extraordinary</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon" aria-hidden="true">▶</span>
+          <span>Entertainment for every mood</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon" aria-hidden="true">∞</span>
+          <span>Your next story awaits</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup-card" id="signup" aria-labelledby="form-title">
+      <div class="card-heading">
+        <p class="card-label">START YOUR JOURNEY</p>
+        <h2 id="form-title">Create your account</h2>
+        <p class="card-description">
+          Your next favorite story is just a step away.
+        </p>
+      </div>
+
+      <form id="signupForm" novalidate>
+        <div class="form-group">
+          <label for="fullName">Full name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            required
+            minlength="2"
+            aria-describedby="nameError"
+          >
+          <small class="error-message" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+            aria-describedby="emailError"
+          >
+          <small class="error-message" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Create password</label>
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="At least 8 characters"
+              autocomplete="new-password"
+              minlength="8"
+              required
+              aria-describedby="passwordError"
+            >
+            <button
+              type="button"
+              id="togglePassword"
+              class="toggle-password"
+              aria-label="Show password"
+              aria-pressed="false"
+            >Show</button>
+          </div>
+          <small class="error-message" id="passwordError"></small>
+        </div>
+
+        <label class="terms">
+          <input type="checkbox" id="terms" name="terms" required aria-describedby="termsError">
+          <span>
+            I agree to the <a href="#terms-note">Terms of Use</a>
+            and <a href="#terms-note">Privacy Policy</a>.
+          </span>
+        </label>
+        <small class="error-message terms-error" id="termsError"></small>
+
+        <button type="submit" class="submit-button">
+          Create account <span aria-hidden="true">→</span>
+        </button>
+
+        <p id="formMessage" class="form-message" role="status"
+           aria-live="polite"></p>
+      </form>
+
+      <div class="divider"><span>YOUR ENTERTAINMENT JOURNEY</span></div>
+      <p class="login-note">
+        Already a member? <a href="login.html">Sign in</a>
+      </p>
+    </section>
+  </main>
+
+  <footer id="terms-note">
+    <p>© 2026 StreamFlix. A personal streaming project.</p>
+    <p>Entertainment begins with a story.</p>
+  </footer>
+</body>
+</html>

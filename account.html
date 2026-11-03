@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your StreamFlix account.">
+  <title>Your account | StreamFlix</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="account.js" defer></script>
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <header class="navbar">
+    <a href="account.html" class="logo" aria-label="StreamFlix home">STREAM<span>FLIX</span></a>
+    <button id="logoutButton" class="nav-link nav-button" type="button">Sign out</button>
+  </header>
+  <main class="hero account-hero">
+    <section class="hero-content">
+      <p class="eyebrow">YOU’RE SIGNED IN</p>
+      <h1>Welcome to<br>your <span>StreamFlix.</span></h1>
+      <p class="hero-description">Your account is ready. This is your home base for the stories you love.</p>
+      <div class="feature-list">
+        <div class="feature"><span class="feature-icon" aria-hidden="true">✦</span><span>Your account is protected with a password hash</span></div>
+        <div class="feature"><span class="feature-icon" aria-hidden="true">▶</span><span>Your session stays active for up to 7 days</span></div>
+        <div class="feature"><span class="feature-icon" aria-hidden="true">∞</span><span>More StreamFlix features are ready to be added</span></div>
+      </div>
+    </section>
+    <section class="signup-card account-card" aria-labelledby="account-title">
+      <div class="card-heading">
+        <p class="card-label">ACCOUNT OVERVIEW</p>
+        <h2 id="account-title">You’re all set.</h2>
+        <p class="card-description">This local backend has created your account and signed you in.</p>
+      </div>
+      <div class="account-details">
+        <div class="account-avatar" aria-hidden="true" id="accountInitials">S</div>
+        <div>
+          <p class="account-name" id="accountName">Loading your account…</p>
+          <p class="account-email" id="accountEmail"></p>
+        </div>
+      </div>
+      <p class="account-footnote">Account data is stored on this computer. Passwords are salted and hashed; they are never saved in plain text.</p>
+      <p id="accountMessage" class="form-message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 StreamFlix. A personal streaming project.</p>
+    <p>Entertainment begins with a story.</p>
+  </footer>
+</body>
+</html>

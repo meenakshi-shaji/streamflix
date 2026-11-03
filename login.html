@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to StreamFlix and find your next favorite story.">
+  <title>Sign in | StreamFlix</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="login.js" defer></script>
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <header class="navbar">
+    <a href="index.html" class="logo" aria-label="StreamFlix home">STREAM<span>FLIX</span></a>
+    <a href="index.html#signup" class="nav-link">Create account</a>
+  </header>
+
+  <main class="hero login-hero">
+    <section class="hero-content">
+      <p class="eyebrow">WELCOME BACK</p>
+      <h1>Your next<br>story is <span>waiting.</span></h1>
+      <p class="hero-description">Pick up where you left off and settle in for something unforgettable.</p>
+      <div class="feature-list">
+        <div class="feature"><span class="feature-icon" aria-hidden="true">✦</span><span>One home for all your favorites</span></div>
+        <div class="feature"><span class="feature-icon" aria-hidden="true">▶</span><span>Stories for every kind of night</span></div>
+        <div class="feature"><span class="feature-icon" aria-hidden="true">∞</span><span>Always something new to discover</span></div>
+      </div>
+    </section>
+
+    <section class="signup-card" aria-labelledby="form-title">
+      <div class="card-heading">
+        <p class="card-label">YOUR WATCHLIST MISSES YOU</p>
+        <h2 id="form-title">Sign in</h2>
+        <p class="card-description">Enter your details to continue to StreamFlix.</p>
+      </div>
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email address</label>
+          <input type="email" id="loginEmail" name="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="loginEmailError">
+          <small class="error-message" id="loginEmailError"></small>
+        </div>
+        <div class="form-group">
+          <div class="label-row">
+            <label for="loginPassword">Password</label>
+            <button type="button" class="text-link" id="forgotPassword">Forgot password?</button>
+          </div>
+          <div class="password-wrapper">
+            <input type="password" id="loginPassword" name="password" placeholder="Enter your password" autocomplete="current-password" required aria-describedby="loginPasswordError">
+            <button type="button" id="toggleLoginPassword" class="toggle-password" aria-label="Show password" aria-pressed="false">Show</button>
+          </div>
+          <small class="error-message" id="loginPasswordError"></small>
+        </div>
+        <button type="submit" class="submit-button">Sign in <span aria-hidden="true">→</span></button>
+        <p id="loginMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+      <div class="divider"><span>GOOD TO HAVE YOU BACK</span></div>
+      <p class="login-note">New to StreamFlix? <a href="index.html#signup">Create an account</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 StreamFlix. A personal streaming project.</p>
+    <p>Entertainment begins with a story.</p>
+  </footer>
+</body>
+</html>
